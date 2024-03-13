@@ -1,0 +1,7 @@
+name = "CSplineUPM"
+uuid = "82a3a035-70eb-41ee-bf99-41359cd1b211"
+authors = ["Aminofa70 <amin.alibakhshi@upm.es>"]
+version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
