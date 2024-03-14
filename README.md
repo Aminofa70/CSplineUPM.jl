@@ -9,19 +9,33 @@ The derivative of the cubic spline is included.
 
 """
 CSpline_coefs(x,y,EndOrder,muL,muR)
+
 this function returns the coefficients of a cubic spline
+
 x:: the "horizontal axis" or "abscissa."
+
 y:: the "vertical axis" or "ordinate."
+
 typof(x)::Vector{Float64}
+
 typeof(x)::Vector{Float64}
+
 EndOrder:: order of derivatives at the left and right
+
 EndOrder:: 1 or 2; (1 is for the first order);(2 is for the second order)
+
 typeof(EndOrder)::Int64
+
 muL:: the value of derivative at the left side
+
 muR:: the value of derivative at the right side
+
 typeof(muL)::Float64
+
 typeof(muR)::Float64
+
 Remark: CSpline_coefs(x,y) namely without EndOrder1,muL,muR is for not-a-knot boundary condition
+
 For example:
 ```
 CSpline_coefs(x,y,1,0.,0.)-> clamped boundary condition
